@@ -1,3 +1,3 @@
 # 地铁迷-MetroMe
-![](./icon.png)=200X200
+![](./icon.png/w/240)
 ![](./detail.png)
