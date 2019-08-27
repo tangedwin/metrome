@@ -3,7 +3,6 @@
     <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
     <title>Shanghai Metro Map</title>
     <desc>Created with Sketch.</desc>
-	<style><![CDATA[*{-webkit-tap-highlight-color: transparent;}]]></style>
     <script><![CDATA[
 	    function setGroupClickFunction(){
 			document.documentElement.style.webkitUserSelect='none';
@@ -19,8 +18,7 @@
 				//if(groups[i].id.substr(0, 3)=="sn-"){
 				if(groups[i].id.substr(0, 3)=="站名-"){
 					//站点名字
-					groups[i].setAttribute("onclick","showStation(this)");
-            				groups[i].style.webKitTapHighlightColor="transparent";
+					//groups[i].setAttribute("onTap","showStation(this)");
 				}else if(groups[i].id.substr(0, 2)=="单站"){
 					//站点标记
 					groups[i].setAttribute("onclick","showStation(this)");
@@ -31,6 +29,7 @@
 				}
 			}
 			resetSVGSize(2880,1800);
+			addNewStyle();
 		};
 		
 		function resetSVGSize(width, height){
@@ -52,6 +51,16 @@
 				if(svg[i].getAttribute("svg-scale")==null) svg[i].setAttribute("svg-scale",scale);
 			}
 		};
+		function addNewStyle() {
+			var styleElement = document.getElementById('styles_js');
+			if (!styleElement) {
+				styleElement = document.createElement('style');
+				styleElement.type = 'text/css';
+				styleElement.id = 'styles_js';
+				styleElement.innerHTML = "*{-webkit-tap-highlight-color:transparent;}";
+				document.getElementsByTagName('svg')[0].appendChild(styleElement);
+			}
+		}
 		
 		function showStation(station){
 			var ev = window.event || arguments.callee.caller.arguments[0];
@@ -308,7 +317,7 @@
                 <g id="单站" transform="translate(301.000000, 4504.000000)" fill="#FFFFFF" fill-opacity="0.5" stroke="#FFFFFF" stroke-width="4">
                     <circle id="椭圆形" cx="9" cy="9" r="9"></circle>
                 </g>
-                <g id="站名-靠右对齐" transform="translate(779.000000, 3835.000000)" style="-webkit-tap-highlight-color: transparent">
+                <g id="站名-靠右对齐" transform="translate(779.000000, 3835.000000)">
                     <text id="English-Name备份" font-family="PingFangSC-Regular, PingFang SC" font-size="18" font-weight="normal" fill="#9B9B9B">
                         <tspan x="-135.292" y="61">Shanghai South Railway Station</tspan>
                     </text>
