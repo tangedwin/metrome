@@ -307,7 +307,7 @@
                 <g id="单站" transform="translate(301.000000, 4504.000000)" fill="#FFFFFF" fill-opacity="0.5" stroke="#FFFFFF" stroke-width="4">
                     <circle id="椭圆形" cx="9" cy="9" r="9"></circle>
                 </g>
-                <g id="站名-靠右对齐" transform="translate(779.000000, 3835.000000)">
+                <g id="站名-靠右对齐" transform="translate(779.000000, 3835.000000)" style="-webkit-tap-highlight-color: transparent">
                     <text id="English-Name备份" font-family="PingFangSC-Regular, PingFang SC" font-size="18" font-weight="normal" fill="#9B9B9B">
                         <tspan x="-135.292" y="61">Shanghai South Railway Station</tspan>
                     </text>
