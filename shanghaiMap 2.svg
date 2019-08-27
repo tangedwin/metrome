@@ -19,6 +19,7 @@
 				if(groups[i].id.substr(0, 3)=="站名-"){
 					//站点名字
 					groups[i].setAttribute("onclick","showStation(this)");
+            				groups[i].style.webKitTapHighlightColor="rgba(0,0,0,0)";
 				}else if(groups[i].id.substr(0, 2)=="单站"){
 					//站点标记
 					groups[i].setAttribute("onclick","showStation(this)");
