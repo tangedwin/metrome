@@ -3,6 +3,7 @@
     <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
     <title>Shanghai Metro Map</title>
     <desc>Created with Sketch.</desc>
+	<style><![CDATA[*{-webkit-tap-highlight-color: transparent;}]]></style>
     <script><![CDATA[
 	    function setGroupClickFunction(){
 			document.documentElement.style.webkitUserSelect='none';
